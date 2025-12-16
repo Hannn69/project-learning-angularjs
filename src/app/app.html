@@ -1,0 +1,15 @@
+<main class="main">
+  <div class="flex h-screen overflow-hidden">
+        <!-- Sidebar -->
+        <app-side-bar />
+        <!-- Main Content Area -->
+        <div class="flex-1 flex flex-col overflow-hidden">
+            <!-- Top Bar -->
+            <app-top-bar />
+            <!-- Main Content -->
+            <main class="flex-1 overflow-y-auto p-6">
+                <router-outlet></router-outlet>
+            </main>
+        </div>
+    </div>
+</main>
