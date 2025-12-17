@@ -1,0 +1,262 @@
+<!-- Product Form Section -->
+<div class="w-full">
+  <div class="border rounded-lg bg-white p-6">
+    <h2 class="px-6 py-4 text-left font-semibold text-lg">Product Information</h2>
+
+    <div class="grid grid-cols-2 gap-6">
+      <!-- Store -->
+      <div>
+        <label class="block font-medium mb-1">Store *</label>
+        <select class="w-full border border-gray-300 p-3 rounded">
+          <option>Select</option>
+        </select>
+      </div>
+
+      <!-- Warehouse -->
+      <div>
+        <label class="block font-medium mb-1">Warehouse *</label>
+        <select class="w-full border border-gray-300 p-3 rounded">
+          <option>Select</option>
+        </select>
+      </div>
+
+      <!-- Product Name -->
+      <div>
+        <label class="block font-medium mb-1">Product Name *</label>
+        <div class="flex gap-2">
+          <input class="w-full border border-gray-300 p-3 rounded" />
+          <button class="cursor-pointer bg-orange-400 text-white px-4 rounded text-sm">
+            Generate
+          </button>
+        </div>
+      </div>
+
+      <!-- Slug -->
+      <div>
+        <label class="block font-medium mb-1">Slug *</label>
+        <input class="w-full border border-gray-300 p-3 rounded" />
+      </div>
+
+      <!-- SKU -->
+      <div>
+        <label class="block font-medium mb-1">SKU *</label>
+        <div class="flex gap-2">
+          <input class="w-full border border-gray-300 p-3 rounded" />
+          <button class="cursor-pointer bg-orange-400 text-white px-4 rounded text-sm">
+            Generate
+          </button>
+        </div>
+      </div>
+
+      <!-- Selling Type -->
+      <div>
+        <label class="block font-medium mb-1">Selling Type *</label>
+        <select class="w-full border border-gray-300 p-3 rounded">
+          <option>Select</option>
+        </select>
+      </div>
+
+      <!-- Category -->
+      <div class="relative">
+        <label class="block font-medium mb-1">Category *</label>
+        <select class="w-full border border-gray-300 p-3 rounded">
+          <option>Select</option>
+        </select>
+        <button class="absolute right-2 top-9 text-orange-500 text-sm">Add New</button>
+      </div>
+
+      <!-- Sub Category -->
+      <div>
+        <label class="block font-medium mb-1">Sub Category *</label>
+        <select class="w-full border border-gray-300 p-3 rounded">
+          <option>Select</option>
+        </select>
+      </div>
+
+      <!-- Brand -->
+      <div>
+        <label class="block font-medium mb-1">Brand *</label>
+        <select class="w-full border border-gray-300 p-3 rounded">
+          <option>Select</option>
+        </select>
+      </div>
+
+      <!-- Unit -->
+      <div>
+        <label class="block font-medium mb-1">Unit *</label>
+        <select class="w-full border border-gray-300 p-3 rounded">
+          <option>Select</option>
+        </select>
+      </div>
+
+      <!-- Barcode Symbology -->
+      <div>
+        <label class="block font-medium mb-1">Barcode Symbology *</label>
+        <select class="w-full border border-gray-300 p-3 rounded">
+          <option>Select</option>
+        </select>
+      </div>
+
+      <!-- Item Barcode -->
+      <div>
+        <label class="block font-medium mb-1">Item Barcode *</label>
+        <input class="w-full border border-gray-300 p-3 rounded" />
+      </div>
+    </div>
+
+    <!-- Description Section -->
+    <div class="mt-8">
+      <label class="block font-medium mb-1">Description</label>
+      <textarea rows="4" class="w-full border border-gray-300 p-3 rounded"></textarea>
+    </div>
+  </div>
+</div>
+
+<!-- Pricing & Stocks Section -->
+<div class="w-full mt-6">
+  <div class="border rounded-lg bg-white p-6">
+    <h2 class="px-6 py-4 text-left font-semibold text-lg">Pricing & Stocks</h2>
+    <div class="flex items-center gap-6 mb-4">
+      <input type="radio" name="productType" class="w-4 h-4" checked />
+      <span class="font-medium">Single Product</span>
+      <input type="radio" name="productType" class="w-4 h-4" />
+      <span class="font-medium">Variable Product</span>
+    </div>
+
+    <div class="grid grid-cols-3 gap-6">
+      <div>
+        <label class="block font-medium mb-1">Quantity *</label>
+        <input class="w-full border border-gray-300 p-3 rounded" />
+      </div>
+      <div>
+        <label class="block font-medium mb-1">Price *</label>
+        <input class="w-full border border-gray-300 p-3 rounded" />
+      </div>
+      <div>
+        <label class="block font-medium mb-1">Tax Type *</label>
+        <select class="w-full border border-gray-300 p-3 rounded">
+          <option>Select</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-3 gap-6">
+      <div>
+        <label class="block font-medium mb-1">Tax *</label>
+        <select class="w-full border border-gray-300 p-3 rounded">
+          <option>Select</option>
+        </select>
+      </div>
+      <div>
+        <label class="block font-medium mb-1">Discount Type *</label>
+        <select class="w-full border border-gray-300 p-3 rounded">
+          <option>Select</option>
+        </select>
+      </div>
+      <div>
+        <label class="block font-medium mb-1">Discount Value *</label>
+        <input class="w-full border border-gray-300 p-3 rounded" />
+      </div>
+    </div>
+
+    <div class="grid grid-cols-3 gap-6">
+      <div>
+        <label class="block font-medium mb-1">Quantity Alert *</label>
+        <input class="w-full border border-gray-300 p-3 rounded" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Images Section -->
+<div class="w-full mt-6">
+  <div class="border rounded-lg bg-white p-6">
+    <h2 class="px-6 py-4 text-left font-semibold text-lg">Images</h2>
+
+    <div class="flex items-start gap-4">
+      <div
+        class="w-32 h-32 border border-dashed rounded-lg flex flex-col justify-center items-center cursor-pointer"
+      >
+        <span class="text-xl">+</span>
+        <span class="text-sm">Add Images</span>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <div class="relative w-32 h-32 border rounded-lg overflow-hidden">
+          <img src="" class="object-cover w-full h-full" />
+          <button
+            class="cursor-pointer absolute top-1 right-1 text-white bg-red-500 rounded px-1 text-xs"
+          >
+            X
+          </button>
+        </div>
+
+        <div class="relative w-32 h-32 border rounded-lg overflow-hidden">
+          <img src="" class="object-cover w-full h-full" />
+          <button
+            class="cursor-pointer absolute top-1 right-1 text-white bg-red-500 rounded px-1 text-xs"
+          >
+            X
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Custom Fields Section -->
+<div class="w-full mt-6">
+  <div class="border rounded-lg bg-white p-6">
+    <h2 class="px-6 py-4 text-left font-semibold text-lg">Custom Fields</h2>
+
+    <div class="border rounded-lg bg-gray-50 p-4">
+      <div class="flex items-center gap-6 mb-6">
+        <label class="flex items-center gap-2">
+          <input type="checkbox" class="w-4 h-4" />
+          <span>Warranties</span>
+        </label>
+
+        <label class="flex items-center gap-2">
+          <input type="checkbox" class="w-4 h-4" />
+          <span>Manufacturer</span>
+        </label>
+
+        <label class="flex items-center gap-2">
+          <input type="checkbox" class="w-4 h-4" />
+          <span>Expiry</span>
+        </label>
+      </div>
+
+      <div class="grid grid-cols-2 gap-6">
+        <div>
+          <label class="block font-medium mb-1">Warranty *</label>
+          <select class="w-full border border-gray-300 p-3 rounded">
+            <option>Select</option>
+          </select>
+        </div>
+        <div>
+          <label class="block font-medium mb-1">Manufacturer *</label>
+          <input class="w-full border border-gray-300 p-3 rounded" />
+        </div>
+
+        <div>
+          <label class="block font-medium mb-1">Manufactured Date *</label>
+          <input type="date" class="w-full border border-gray-300 p-3 rounded" />
+        </div>
+
+        <div>
+          <label class="block font-medium mb-1">Expiry On *</label>
+          <input type="date" class="w-full border border-gray-300 p-3 rounded" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Submit Section -->
+<div class="flex justify-end gap-3 mt-6">
+  <button class="px-6 py-2 rounded bg-gray-200 text-gray-700">Cancel</button>
+  <button class="cursor-pointer px-3 py-2 mr-4 rounded bg-orange-500 text-white">
+    Add Product
+  </button>
+</div>

@@ -2,9 +2,9 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   standalone: true,
-  selector: 'app-top-bar',
-  templateUrl: './top-bar.html',
-  styleUrl: './top-bar.css',
+  selector: 'app-add-product',
+  templateUrl: './add-product.html',
+  styleUrl: './add-product.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TopBarComponent {}
+export class AddProductComponent {}
