@@ -7,12 +7,12 @@
   <div class="flex items-center gap-3">
     <div class="cursor-pointer bg-red-500 text-white text-xs px-3 py-2 rounded-md">PDF</div>
     <div class="cursor-pointer bg-green-600 text-white text-xs px-3 py-2 rounded-md">XLS</div>
-    <a href="/" class="cursor-pointer border px-3 py-2 rounded-md"> ⟳ </a>
+    <a href="/product" class="cursor-pointer border px-3 py-2 rounded-md"> ⟳ </a>
 
     <div class="cursor-pointer border px-3 py-2 rounded-md">^</div>
 
     <a
-      routerLink="/add-product"
+      routerLink="/product/add-product"
       class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md flex items-center gap-2"
     >
       <span>➕</span> Add Product
@@ -76,124 +76,26 @@
         </thead>
 
         <tbody class="text-sm">
-          <!-- PT001 -->
+          @for (product of products(); track product.sku) {
           <tr class="border-b hover:bg-gray-50">
             <td class="py-3 px-4">
               <input type="checkbox" />
             </td>
-            <td class="py-3 px-4">PT001</td>
-            <td class="py-3 px-4">Lenovo IdeaPad 3</td>
-            <td class="py-3 px-4">Computers</td>
-            <td class="py-3 px-4">Lenovo</td>
-            <td class="py-3 px-4">$600</td>
-            <td class="py-3 px-4">Pc</td>
-            <td class="py-3 px-4">100</td>
-            <td class="py-3 px-4">James Kirwin</td>
+            <td class="py-3 px-4">{{ product.sku }}</td>
+            <td class="py-3 px-4">{{ product.name }}</td>
+            <td class="py-3 px-4">{{ product.category }}</td>
+            <td class="py-3 px-4">{{ product.brand }}</td>
+            <td class="py-3 px-4">${{ product.price }}</td>
+            <td class="py-3 px-4">{{ product.unit }}</td>
+            <td class="py-3 px-4">{{ product.quantity }}</td>
+            <td class="py-3 px-4">{{ product.createdBy }}</td>
             <td class="py-3 px-4 flex gap-2">
               <a href="#" class="cursor-pointer border p-2 rounded-lg"> View </a>
               <a href="#" class="cursor-pointer border p-2 rounded-lg"> Edit </a>
               <button class="cursor-pointer border p-2 rounded-lg">Delete</button>
             </td>
           </tr>
-
-          <!-- PT002 -->
-          <tr class="border-b hover:bg-gray-50">
-            <td class="py-3 px-4">
-              <input type="checkbox" />
-            </td>
-            <td class="py-3 px-4">PT002</td>
-            <td class="py-3 px-4">Beats Pro</td>
-            <td class="py-3 px-4">Electronics</td>
-            <td class="py-3 px-4">Beats</td>
-            <td class="py-3 px-4">$160</td>
-            <td class="py-3 px-4">Pc</td>
-            <td class="py-3 px-4">140</td>
-            <td class="py-3 px-4">Francis Chang</td>
-            <td class="py-3 px-4 flex gap-2">
-              <a href="#" class="cursor-pointer border p-2 rounded-lg"> View </a>
-              <a href="#" class="cursor-pointer border p-2 rounded-lg"> Edit </a>
-              <button class="cursor-pointer border p-2 rounded-lg">Delete</button>
-            </td>
-          </tr>
-          <!-- PT003 -->
-          <tr class="border-b hover:bg-gray-50">
-            <td class="py-3 px-4">
-              <input type="checkbox" />
-            </td>
-            <td class="py-3 px-4">PT003</td>
-            <td class="py-3 px-4">Nike Jordan</td>
-            <td class="py-3 px-4">Shoe</td>
-            <td class="py-3 px-4">Nike</td>
-            <td class="py-3 px-4">$110</td>
-            <td class="py-3 px-4">Pc</td>
-            <td class="py-3 px-4">300</td>
-            <td class="py-3 px-4">Antonio Engle</td>
-            <td class="py-3 px-4 flex gap-2">
-              <a href="#" class="cursor-pointer border p-2 rounded-lg"> View </a>
-              <a href="#" class="cursor-pointer border p-2 rounded-lg"> Edit </a>
-              <button class="cursor-pointer border p-2 rounded-lg">Delete</button>
-            </td>
-          </tr>
-
-          <!-- PT004 -->
-          <tr class="border-b hover:bg-gray-50">
-            <td class="py-3 px-4">
-              <input type="checkbox" />
-            </td>
-            <td class="py-3 px-4">PT004</td>
-            <td class="py-3 px-4">Apple Series 5 Watch</td>
-            <td class="py-3 px-4">Electronics</td>
-            <td class="py-3 px-4">Apple</td>
-            <td class="py-3 px-4">$120</td>
-            <td class="py-3 px-4">Pc</td>
-            <td class="py-3 px-4">450</td>
-            <td class="py-3 px-4">Leo Kelly</td>
-            <td class="py-3 px-4 flex gap-2">
-              <a href="#" class="cursor-pointer border p-2 rounded-lg"> View </a>
-              <a href="#" class="cursor-pointer border p-2 rounded-lg"> Edit </a>
-              <button class="cursor-pointer border p-2 rounded-lg">Delete</button>
-            </td>
-          </tr>
-
-          <!-- PT005 -->
-          <tr class="border-b hover:bg-gray-50">
-            <td class="py-3 px-4">
-              <input type="checkbox" />
-            </td>
-            <td class="py-3 px-4">PT005</td>
-            <td class="py-3 px-4">Amazon Echo Dot</td>
-            <td class="py-3 px-4">Electronics</td>
-            <td class="py-3 px-4">Amazon</td>
-            <td class="py-3 px-4">$80</td>
-            <td class="py-3 px-4">Pc</td>
-            <td class="py-3 px-4">320</td>
-            <td class="py-3 px-4">Annette Walker</td>
-            <td class="py-3 px-4 flex gap-2">
-              <a href="#" class="cursor-pointer border p-2 rounded-lg"> View </a>
-              <a href="#" class="cursor-pointer border p-2 rounded-lg"> Edit </a>
-              <button class="cursor-pointer border p-2 rounded-lg">Delete</button>
-            </td>
-          </tr>
-
-          <!-- PT006 -->
-          <tr class="border-b hover:bg-gray-50">
-            <td class="py-3 px-4">
-              <input type="checkbox" />
-            </td>
-            <td class="py-3 px-4">PT006</td>
-            <td class="py-3 px-4">Sanford Chair Sofa</td>
-            <td class="py-3 px-4">Furnitures</td>
-            <td class="py-3 px-4">Modern Wave</td>
-            <td class="py-3 px-4">$320</td>
-            <td class="py-3 px-4">Pc</td>
-            <td class="py-3 px-4">650</td>
-            <td class="py-3 px-4">John Weaver</td>
-            <td class="py-3 px-4 flex gap-2">
-              <a href="#" class="cursor-pointer border p-2 rounded-lg"> View </a>
-              <a href="#" class="cursor-pointer border p-2 rounded-lg"> Edit </a>
-              <button class="cursor-pointer border p-2 rounded-lg">Delete</button>
-            </td>
-          </tr>
+          }
         </tbody>
       </table>
     </div>
